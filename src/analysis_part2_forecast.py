@@ -12,7 +12,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score, mean_squared_error
 
 plt.rcParams['figure.figsize'] = (10, 5); plt.rcParams['axes.grid'] = True
-os.makedirs('outputs', exist_ok=True)
+os.makedirs('../outputs', exist_ok=True)
 
 df = pd.read_csv('../data/salesdaily.csv')
 df['datum'] = pd.to_datetime(df['datum'])

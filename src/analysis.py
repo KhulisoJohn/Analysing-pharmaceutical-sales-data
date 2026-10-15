@@ -8,16 +8,16 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
-from pathlib import Path
-ROOT = Path(__file__).resolve().parent.parent   # project root (one level above src/)
-DATA = ROOT / 'data' / 'salesdaily.csv'
-OUT = ROOT / 'outputs'
-OUT.mkdir(exist_ok=True)
+#from pathlib import Path
+#ROOT = Path(__file__).resolve().parent.parent   # project root (one level above src/)
+#DATA = ROOT / 'data' / 'salesdaily.csv'
+#OUT = ROOT / 'outputs'
+#OUT.mkdir(exist_ok=True)
 
 plt.rcParams['figure.figsize'] = (10, 5)
 plt.rcParams['axes.grid'] = True
 plt.rcParams['grid.alpha'] = 0.3
-os.makedirs('outputs', exist_ok=True)
+os.makedirs('../outputs', exist_ok=True)
 
 
 # Step 1 - Load the data
