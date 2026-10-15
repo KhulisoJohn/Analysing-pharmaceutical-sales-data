@@ -9,8 +9,9 @@ A pharmacy needs to know which drug categories drive sales, what sells and when,
 ```
 Analysing-pharmaceutical-sales-data/
 ├── data/salesdaily.csv                 <- download from Kaggle (Pharma Sales Data)
-├── outputs/                            <- charts (PNG) and tables (CSV)
+|                            <- charts (PNG) and tables (CSV)
 ├── src/
+    |── outputs/
 │   ├── analysis.py                     <- Part 1 (6 questions)
 │   ├── analysis_part2_forecast.py      <- Part 2 (weekday analysis + forecast)
 │   ├── analysis.ipynb                  <- Part 1 notebook
@@ -39,9 +40,9 @@ Or start `jupyter notebook` from the project root and open the notebooks.
 | Q5 | Highest average daily sales | N02BE at 29.9 units/day, about 51x N05C (0.6/day) |
 | Q6 | Is R03 seasonal? | Yes. Peak in December (7.9/day), low in July (3.0/day), a peak about 2.7x the low. Sales are high from October to February |
 
-![Total sales by category](outputs/q1_total_by_category.png)
-![Top 3 in selected months](outputs/q3_top3_selected_months.png)
-![R03 average daily sales by month](outputs/q6_r03_by_month.png)
+![Total sales by category](src/outputs/q1_total_by_category.png)
+![Top 3 in selected months](src/outputs/q3_top3_selected_months.png)
+![R03 average daily sales by month](src/outputs/q6_r03_by_month.png)
 
 ## 🔍 Part 2: Weekday analysis and forecast
 
@@ -63,7 +64,7 @@ Or start `jupyter notebook` from the project root and open the notebooks.
 
 The ensemble predicts about **107 units** of M01AE for January 2020. The models disagree widely (90 to 117), so treat this as a rough estimate, not a precise forecast.
 
-![Forecast](outputs/p2_forecast.png)
+![Forecast](src/outputs/p2_forecast.png)
 
 ## 💡 Business recommendations
 1. **Protect N02BE stock first.** It is half of all sales, sells almost every day and leads every period examined. Running out would hurt the most.
