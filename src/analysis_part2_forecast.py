@@ -14,7 +14,7 @@ from sklearn.metrics import r2_score, mean_squared_error
 plt.rcParams['figure.figsize'] = (10, 5); plt.rcParams['axes.grid'] = True
 os.makedirs('outputs', exist_ok=True)
 
-df = pd.read_csv('data/salesdaily.csv')
+df = pd.read_csv('../data/salesdaily.csv')
 df['datum'] = pd.to_datetime(df['datum'])
 df = df.sort_values('datum').reset_index(drop=True)
 drugs = [c for c in ['M01AB','M01AE','N02BA','N02BE','N05B','N05C','R03','R06'] if c in df.columns]

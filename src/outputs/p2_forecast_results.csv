@@ -1,0 +1,5 @@
+Model,R2 (test),RMSE (test),Predicted M01AE Jan 2020
+Linear,-0.04,12.59,116.7
+Polynomial (deg 3),0.382,9.7,114.3
+SVR,0.043,12.08,89.6
+Voting ensemble,0.32,10.18,106.9
