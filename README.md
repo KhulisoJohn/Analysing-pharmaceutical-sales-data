@@ -1,5 +1,7 @@
 # 💊 Analysing Pharmaceutical Sales Data
 
+Project page: https://roadmap.sh/projects/pharmaceutical-sales-data
+
 Python, Pandas, Matplotlib and scikit-learn analysis of 5+ years of daily pharmacy sales (Jan 2014 - Oct 2019) across 8 ATC drug categories. Part 1 answers six stock-planning questions. Part 2 adds a weekday analysis and a January 2020 sales forecast.
 
 ## 🎯 Business problem
